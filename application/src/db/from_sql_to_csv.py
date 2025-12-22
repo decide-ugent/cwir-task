@@ -117,25 +117,4 @@ df.to_csv(csv_file_path, index=False)
 
 #---------------------------------------------#
 
-'''
-# Define the URL for the upload
-#upload_url = 'https://cloud.ilabt.imec.be/remote.php/dav/files/af741990-37f9-103d-9441-9bec5c4808a7/ExperimentsData/risky_dm_0/practice_mouse_coordinates.csv/'
 
-# Define your username and password for authentication
-username = 'algarrid'
-password = 'faunistico'
-
-# Upload the file using requests
-with open(csv_file_path, 'rb') as file:
-    response = requests.put(
-        upload_url,
-        data=file,
-        auth=HTTPBasicAuth(username, password)
-    )
-
-# Check the response
-if response.status_code == 201:
-    print('File uploaded successfully!')
-else:
-    print(f'Failed to upload file. Status code: {response.status_code}, Response: {response.text}')
-'''

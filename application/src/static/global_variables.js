@@ -17,8 +17,7 @@ var questionnaireClass = 1;
 var timePerceptionMeasureMethod = 'ReproTaskMethod1';
 // ReproTaskMethod1: Reproduction task with computer stimulus onset
 
-//var totalBlocks = 5
-var totalBlocks = 2
+var totalBlocks = 5
 
 //--------Initialize Questionnaire variables --------//
 if (questionnaireClass === 1) {

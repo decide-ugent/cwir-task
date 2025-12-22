@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Define your MySQL database connection URL
 
-db_url = 'mysql://algarrid:faunistico@localhost:3306/risky_dm_3'
+db_url = 'your_database_url'
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
@@ -31,30 +31,6 @@ class experimentMetaData(db.Model):
     Lot1Values = db.Column(db.Text)
     ObjectiveTimeIntervals = db.Column(db.Text)
 
-"""
-class practiceRoundsAnswers(db.Model):
-    __tablename__ = 'practiceRoundsAnswers'
-    StudyID = db.Column(db.String(255))
-    SessionID = db.Column(db.String(255))
-    PracticeRoundID = db.Column(db.String(255), primary_key=True)
-    ParticipantID = db.Column(db.String(255))
-    PracticeGambleNumber = db.Column(db.String(255))
-    GambleChoice = db.Column(db.String(255))
-    ResponseTimeGamble = db.Column(db.String(255))
-    GambleSecondaryChoices = db.Column(db.Text)
-    GambleSecondaryChoicesTimes = db.Column(db.Text)
-    GambleDeadline = db.Column(db.String(255))
-    MissedDeadline = db.Column(db.String(255))
-    SubjectiveTime = db.Column(db.String(255))
-    ResponseTimeSubjectiveTime = db.Column(db.String(255))
-    ResponseTimeFirstAttemptSubjectiveTime =  db.Column(db.String(255))
-    AttemptsAnswerSubjectiveTime = db.Column(db.String(255))
-    ConfidenceSubjectiveTime = db.Column(db.String(255))
-    ResponseTimeConfidenceSubjectiveTime = db.Column(db.String(255))
-    SubjectiveDifficulty = db.Column(db.String(255))
-    ResponseTimeSubjectiveDifficulty = db.Column(db.String(255))
-    ResponseTimeSubmitAnswersQuestionnaire = db.Column(db.String(255))
-"""
 
 class practiceMouseCoordinates(db.Model):
     __tablename__ = 'practiceMouseCoordinates'
@@ -109,34 +85,6 @@ class mouseCoordinates(db.Model):
     BigRectLeftXCoord = db.Column(db.String(255))
     BigRectRightXCoord = db.Column(db.String(255))
 
-"""
-class experimentRoundsAnswers(db.Model):
-    __tablename__ = 'experimentRoundsAnswers'
-    StudyID = db.Column(db.String(255))
-    SessionID = db.Column(db.String(255))
-    ExperimentRoundID = db.Column(db.String(255), primary_key=True)
-    ParticipantID = db.Column(db.String(255))
-    BlockNumber = db.Column(db.String(255))
-    ExperimentRoundNumber = db.Column(db.String(255))
-    ExperimentGambleNumber = db.Column(db.String(255))
-    LotteryLeft = db.Column(db.String(255))
-    LotteryRight = db.Column(db.String(255))
-    GambleChoice = db.Column(db.String(255))
-    ResponseTimeGamble = db.Column(db.String(255))
-    GambleSecondaryChoices = db.Column(db.Text)
-    GambleSecondaryChoicesTimes = db.Column(db.Text)
-    GambleDeadline = db.Column(db.String(255))
-    MissedDeadline = db.Column(db.String(255))
-    SubjectiveTime = db.Column(db.String(255))
-    ResponseTimeSubjectiveTime = db.Column(db.String(255))
-    ResponseTimeFirstAttemptSubjectiveTime =  db.Column(db.String(255))
-    AttemptsAnswerSubjectiveTime = db.Column(db.String(255))
-    ConfidenceSubjectiveTime = db.Column(db.String(255))
-    ResponseTimeConfidenceSubjectiveTime = db.Column(db.String(255))
-    SubjectiveDifficulty = db.Column(db.String(255))
-    ResponseTimeSubjectiveDifficulty = db.Column(db.String(255))
-    ResponseTimeSubmitAnswersQuestionnaire = db.Column(db.String(255))
-"""
 
 class experimentReproTaskMethod1Quest1Answers(db.Model):
     __tablename__ = 'experimentReproTaskMethod1Quest1Answers'
@@ -299,43 +247,6 @@ def save_experiment_metadata():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-"""
-@app.route('/save-practice-question', methods=['POST'])
-def save_practice_question():
-    try:
-        data = request.get_json()
-
-        practiceRoundsAnswers_data = practiceRoundsAnswers(
-            StudyID = data['StudyID'],
-		    SessionID = data['SessionID'],
-		    PracticeRoundID = f"{data['ParticipantID']}_{data['PracticeGambleNumber']}_practice",
-            ParticipantID = data['ParticipantID'],
-		    PracticeGambleNumber = data['PracticeGambleNumber'],
-		    GambleChoice = data['GambleChoice'],	
-		    ResponseTimeGamble = data['ResponseTimeGamble'],
-            GambleSecondaryChoices = data['GambleSecondaryChoices'],
-            GambleSecondaryChoicesTimes = data['GambleSecondaryChoicesTimes'],
-            GambleDeadline = data['GambleDeadline'],
-            MissedDeadline = data['MissedDeadline'],
-		    SubjectiveTime = data['SubjectiveTime'],
-		    ResponseTimeSubjectiveTime = data['ResponseTimeSubjectiveTime'],
-            ResponseTimeFirstAttemptSubjectiveTime = data['ResponseTimeFirstAttemptSubjectiveTime'],
-            AttemptsAnswerSubjectiveTime = data['AttemptsAnswerSubjectiveTime'],
-    	    ConfidenceSubjectiveTime = data['ConfidenceSubjectiveTime'],
-     	    ResponseTimeConfidenceSubjectiveTime = data['ResponseTimeConfidenceSubjectiveTime'],
-		    SubjectiveDifficulty = data['SubjectiveDifficulty'],
-		    ResponseTimeSubjectiveDifficulty = data['ResponseTimeSubjectiveDifficulty'],
-		    ResponseTimeSubmitAnswersQuestionnaire = data['ResponseTimeSubmitAnswersQuestionnaire']
-	    )
-	
-        db.session.add(practiceRoundsAnswers_data)
-
-        db.session.commit()
-        return jsonify({"message": "Data inserted successfully"}), 201
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-"""
     
 @app.route('/save-practice-mouse-coordinates', methods=['POST'])
 def save_practice_mouse_coordinates():

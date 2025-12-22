@@ -6,7 +6,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 from sqlalchemy.dialects.mysql import LONGTEXT
 
 # Define the SQLAlchemy database connection URL
-db_url = "mysql://algarrid:faunistico@localhost:3306/risky_dm_3"
+db_url = "your_url"
 # Create the SQLAlchemy engine
 engine = create_engine(db_url)
 
@@ -62,31 +62,6 @@ class experimentMetaData(Base):
     Lot1Values = Column(Text)
     ObjectiveTimeIntervals = Column(Text)
 
-"""
-class practiceRoundsAnswers(Base):
-    __tablename__ = 'practiceRoundsAnswers'
-    StudyID = Column(String(255))
-    SessionID = Column(String(255))
-    PracticeRoundID = Column(String(255), primary_key=True)
-    ParticipantID = Column(String(255))
-    PracticeGambleNumber = Column(String(255))
-    GambleChoice = Column(String(255))
-    ResponseTimeGamble = Column(String(255))
-    GambleSecondaryChoices = Column(Text)
-    GambleSecondaryChoicesTimes = Column(Text)
-    GambleDeadline = Column(String(255))
-    MissedDeadline = Column(String(255))
-    SubjectiveTime = Column(String(255))
-    ResponseTimeSubjectiveTime = Column(String(255))
-    ResponseTimeFirstAttemptSubjectiveTime =  Column(String(255))
-    AttemptsAnswerSubjectiveTime = Column(String(255))
-    ConfidenceSubjectiveTime = Column(String(255))
-    ResponseTimeConfidenceSubjectiveTime = Column(String(255))
-    SubjectiveDifficulty = Column(String(255))
-    ResponseTimeSubjectiveDifficulty = Column(String(255))
-    ResponseTimeSubmitAnswersQuestionnaire = Column(String(255))
-"""
-
 class practiceMouseCoordinates(Base):
     __tablename__ = 'practiceMouseCoordinates'
     StudyID = Column(String(255))
@@ -140,34 +115,6 @@ class mouseCoordinates(Base):
     BigRectLeftXCoord = Column(String(255))
     BigRectRightXCoord = Column(String(255))
 
-"""
-class experimentRoundsAnswers(Base):
-    __tablename__ = 'experimentRoundsAnswers'
-    StudyID = Column(String(255))
-    SessionID = Column(String(255))
-    ExperimentRoundID = Column(String(255), primary_key=True)
-    ParticipantID = Column(String(255))
-    BlockNumber = Column(String(255))
-    ExperimentRoundNumber = Column(String(255))
-    ExperimentGambleNumber = Column(String(255))
-    LotteryLeft = Column(String(255))
-    LotteryRight = Column(String(255))
-    GambleChoice = Column(String(255))
-    ResponseTimeGamble = Column(String(255))
-    GambleSecondaryChoices = Column(Text)
-    GambleSecondaryChoicesTimes = Column(Text)
-    GambleDeadline = Column(String(255))
-    MissedDeadline = Column(String(255))
-    SubjectiveTime = Column(String(255))
-    ResponseTimeSubjectiveTime = Column(String(255))
-    ResponseTimeFirstAttemptSubjectiveTime =  Column(String(255))
-    AttemptsAnswerSubjectiveTime = Column(String(255))
-    ConfidenceSubjectiveTime = Column(String(255))
-    ResponseTimeConfidenceSubjectiveTime = Column(String(255))
-    SubjectiveDifficulty = Column(String(255))
-    ResponseTimeSubjectiveDifficulty = Column(String(255))
-    ResponseTimeSubmitAnswersQuestionnaire = Column(String(255))
-"""
 
 class experimentReproTaskMethod1Quest1Answers(Base):
     __tablename__ = 'experimentReproTaskMethod1Quest1Answers'
