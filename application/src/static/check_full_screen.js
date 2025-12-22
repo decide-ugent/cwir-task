@@ -19,8 +19,6 @@ function checkFullscreenStatus() {
         $('.screen-size-top-right-button').prop('disabled', true); 
         $('.screen-size-bottom-left-button').prop('disabled', true); 
         $('.screen-size-bottom-right-button').prop('disabled', true); 
-
-        //console.log("full_screen_exited", full_screen_exited)
         
 
         if (!fullscreenMessageShown) {

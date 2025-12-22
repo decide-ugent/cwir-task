@@ -92,10 +92,8 @@ function blockEndQuestionnaire() {
     // Record the start time before showing the questions
     questionStartTime = performance.now();
     
-    //let timeToAnswerQuestion1;
     let typingTimerQuestion1;
-    //let attemptsAnswerQuestion1 = 0;
-    //let firstTimeToAnswerQuestion1;
+
 
     answer1Input.on('keyup', function () {
         if (Event.keyCode === 8 || Event.keyCode === 46) {

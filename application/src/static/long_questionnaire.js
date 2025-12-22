@@ -106,8 +106,6 @@ function showQuestions() {
     
     //let timeToAnswerQuestion1;
     let typingTimerQuestion1;
-    //let attemptsAnswerQuestion1 = 0;
-    //let firstTimeToAnswerQuestion1;
     const typingTimeoutDelay = 1000; // Adjust as needed
 
     answer1Input.on('keyup', function () {
@@ -149,9 +147,6 @@ function showQuestions() {
 
             clearTimeout(answerQuestionnaireWarning)
 	    
-	        //var answer1 = $('#answer1').val();
-            //var answer2 = $('input[name="rating2"]:checked').val();
-            //var answer3 = $('input[name="rating3"]:checked').val();
 
             answer1 = $('#answer1').val();
             answer2 = $('input[name="rating2"]:checked').val();
@@ -165,7 +160,6 @@ function showQuestions() {
             question2Element.empty().append(question2Text,question2RateScale);
             question3Element.empty().append(question3Text,question3RateScale);
 	    
-            //if (!answer1 || !answer2 || !answer3) {
             if (answer1 == 0 || answer2 == 0 || answer3 == 0) {
 
                 //if (!answer1) {
@@ -193,17 +187,6 @@ function showQuestions() {
 
                     timeToAnswerQuestionnaire = performance.now() - questionStartTime
                     
-                    //console.log("timeToAnswerQuestionnaire",timeToAnswerQuestionnaire)
-                    
-                    /*dataExperiment['SubjectiveTime'] = answer1;
-                    dataExperiment['ResponseTimeSubjectiveTime'] = timeToAnswerQuestion1/1000;
-                    dataExperiment['ResponseTimeFirstAttemptSubjectiveTime'] = firstTimeToAnswerQuestion1/1000;
-                    dataExperiment['AttemptsAnswerSubjectiveTime'] = attemptsAnswerQuestion1;
-                    dataExperiment['ConfidenceSubjectiveTime'] = answer2;
-                    dataExperiment['ResponseTimeConfidenceSubjectiveTime'] = timeToAnswerQuestion2/1000;
-                    dataExperiment['SubjectiveDifficulty'] = answer3;
-                    dataExperiment['ResponseTimeSubjectiveDifficulty'] = timeToAnswerQuestion3/1000;
-                    dataExperiment['ResponseTimeSubmitAnswersQuestionnaire'] = timeToAnswerQuestionnaire/1000;*/
                
                     //saveExperimentQuestion(dataExperiment)
                     saveExperimentQuestion()
@@ -215,7 +198,6 @@ function showQuestions() {
 
                     showOptions();
 
-                    //breakHappened = 0
                     breakHappened = false;
 
                 } else {

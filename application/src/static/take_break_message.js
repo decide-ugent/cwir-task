@@ -15,7 +15,7 @@ function takeBreak() {
     var takeBreakText4 = $("<p class = take-break-text>"+
         "Note that the timer, indicating the time left, is updated every 15 seconds: </p>")
    
-    /*if (blockNumber == 2) {
+    if (blockNumber == 2) {
         
         var takeBreakText1 = $("<p class = take-break-text>You have completed the "+
             "first block and you can now take a 5 minute break "+
@@ -52,14 +52,8 @@ function takeBreak() {
 
         var takeBreakText3 = $("<p class = take-break-text><strong>"+
             "You have one block left</strong>. Good luck! 😊</p>")
-    }*/
+    }
 
-    var takeBreakText1 = $("<p class = take-break-text>You have completed the "+
-        "first block and you can now take a 5 minute break "+
-        "(feel free to grab a drink or stretch your legs 😉).</p>");
-        
-    var takeBreakText3 = $("<p class = take-break-text><strong>"+
-        "You have one block left</strong>. Good luck! 😊</p>")
 
     var countdownDisplay = $('<div>')
         .addClass('countdown-display')

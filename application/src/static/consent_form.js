@@ -104,9 +104,6 @@ function showConsentForm() {
                 //Check if the screen is large enough
                 checkScreenSize();
                 
-                //Just for testing delete
-                //showPracticeOptions(1);
-                //showOptions(1);
 
             })
         var buttons = $('<div>').addClass('buttons_areyousure').append(buttonBack,buttonContinue)

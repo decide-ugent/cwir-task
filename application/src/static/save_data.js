@@ -15,7 +15,6 @@ function saveExperimentMetaData() {
 
     // Send the data to the Flask application
     $.ajax({
-        //url: '/cognitive_load/save-experiment-metadata',
         url: urlPath+'save-experiment-metadata',
         type: 'POST',
         data: JSON.stringify(metaDataArray),
@@ -30,24 +29,6 @@ function saveExperimentMetaData() {
     });
 }
 
-/*function savePracticeQuestion(dataPractice) {
-
-    var data = dataPractice
-
-    // Send the data to the Flask application
-    $.ajax({
-        url: '/cognitive_load/save-practice-question',
-        type: 'POST',
-        data: JSON.stringify(data),
-        contentType: 'application/json',
-        success: function(response) {
-            console.log("Practice question data saved")
-            },
-            error: function(xhr, status, error) {
-                console.error(xhr.responseText);
-            }
-    });
-}*/
 
 function savePracticeMouseCoordinates() {
 
@@ -76,7 +57,6 @@ function savePracticeMouseCoordinates() {
 
     // Send the data to the Flask application
     $.ajax({
-        //url: '/cognitive_load/save-practice-mouse-coordinates',
         url: urlPath+'save-practice-mouse-coordinates',
         type: 'POST',
         data: JSON.stringify(dataPracticeMouseTracking),
@@ -120,7 +100,6 @@ function saveMouseCoordinates() {
 
     // Send the data to the Flask application
     $.ajax({
-        //url: '/cognitive_load/save-mouse-coordinates',
         url: urlPath+'save-mouse-coordinates',
         type: 'POST',
         data: JSON.stringify(dataMouseTracking),
@@ -173,7 +152,6 @@ function saveInstructionsCompletionTimes() {
    
 
     $.ajax({
-        //url: '/cognitive_load/save-instructions-completion-times',
         url: urlPath +'save-instructions-completion-times',
         type: 'POST',
         data: JSON.stringify(dataInstructionsCompletionTimes),
@@ -207,7 +185,6 @@ function saveBlockEndQuestionnaire() {
     dataBlockEndQ['TotalTimeBlock'] = totalTimeBlock/1000;
 
     $.ajax({
-        //url: '/cognitive_load/save-block-end-questionnaire',
         url: urlPath +'save-block-end-questionnaire',
         type: 'POST',
         data: JSON.stringify(dataBlockEndQ),

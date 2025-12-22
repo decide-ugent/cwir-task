@@ -89,18 +89,13 @@ function processGambles(results) {
 
     // Determine the starting block rounds and when attention checks will happen
 
-    //rounds_starting_block = [parseInt(totalRounds/5)+1, 
-    //                         parseInt(2*totalRounds/5)+1,
-    //                         parseInt(3*totalRounds/5)+1,
-    //                         parseInt(4*totalRounds/5)+1];
+    rounds_starting_block = [parseInt(totalRounds/5)+1, 
+                             parseInt(2*totalRounds/5)+1,
+                             parseInt(3*totalRounds/5)+1,
+                             parseInt(4*totalRounds/5)+1];
 
-    //attention_checks.push(generateRandom(rounds_starting_block[0]+1, rounds_starting_block[1]-2))
-    //attention_checks.push(generateRandom(rounds_starting_block[2]+1, rounds_starting_block[3]-2))
-
-    rounds_starting_block = [33]
-
-    attention_checks.push(generateRandom(15, 30))
-    attention_checks.push(generateRandom(34, 60))
+    attention_checks.push(generateRandom(rounds_starting_block[0]+1, rounds_starting_block[1]-2))
+    attention_checks.push(generateRandom(rounds_starting_block[2]+1, rounds_starting_block[3]-2))
 
 
     attention_check_info.push(attention_checks[0],attention_checks[1])

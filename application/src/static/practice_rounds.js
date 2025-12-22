@@ -288,21 +288,7 @@ function showPracticeOptions(){
                             practice_lotteries_chosen.push(choice)
                             practice_lotteries_chosen_missed_deadline.push(false)
                     
-                            /*dataPractice['StudyID'] = studyID;
-                            dataPractice['SessionID'] = sessionID;
-                            dataPractice['ParticipantID'] = participantID;
-                            dataPractice['PracticeGambleNumber'] = practiceRound;
-                            dataPractice['GambleChoice'] = choice;
-                            dataPractice['ResponseTimeGamble'] = timePickGamble/1000;
-                            dataPractice['GambleSecondaryChoices'] = secondary_choices.join(', ');
-                            dataPractice['GambleSecondaryChoicesTimes'] = secondary_choices_times.join(', ');
-                            dataPractice['GambleDeadline'] = round_deadline
-                            dataPractice['MissedDeadline'] = missedDeadline;*/
-
-                            //console.log("Secondary choices: ",secondary_choices)
-                            //console.log("Secondary choices times: ",secondary_choices_times)
-
-                            //roundStarted = false; //Reset flag to know if round started to default
+                          
                             
                             //Make secondary choices and times list empty again.
                             secondary_choices = [];

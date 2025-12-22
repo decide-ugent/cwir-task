@@ -245,7 +245,6 @@ const explanations = {
     point3: "Once the deadline is reached, the lotteries will disappear. "+
             "However, if no lottery was selected before the deadline, "+
             "the round will continue until you pick one of the two lotteries.",
-    //point4: "If you missed a deadline, you will be informed after the round finishes."
       
     },
 
@@ -292,14 +291,11 @@ const explanations = {
   },
   explanation6: {
     heading: "Instructions 6/6: Number of rounds",
-    //paragraph1:"The study will be divided into <strong>5 blocks</strong>, "+
-    //          "<strong>each consisting of 32 experimental rounds</strong>.",
-    //paragraph2:"After each block, you will have a rest of at least 2 minutes and up to 5 minutes "+
-    //           "before the next block begins."
-    paragraph1:"The study will be divided into <strong>2 blocks</strong>, "+
+    paragraph1:"The study will be divided into <strong>5 blocks</strong>, "+
               "<strong>each consisting of 32 experimental rounds</strong>.",
-    paragraph2:"After the first block, you will have a rest of at least 2 minutes and up to 5 minutes "+
+    paragraph2:"After each block, you will have a rest of at least 2 minutes and up to 5 minutes "+
                "before the next block begins."
+    
   },
   timing_instructions: {
     heading:"Reproduce the correct time interval!",

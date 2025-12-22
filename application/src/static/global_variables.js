@@ -200,38 +200,8 @@ var gamblesPercentages = [];
 var gamblesValues = []
 var gamblesDeadlines = []
 let gamblesPresentationOrder;
-var lotteriesChosen = []//1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1,
-                    //1,1,1,1,1,1,1,1,1,1,1]//[]
-var lotteriesChosenMissedDeadline = []//[true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //true,true,true,true,true,true,true,true,true,true,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false,
-    //false,false,false,false,false,false,false,false,false,false]
+var lotteriesChosen = []
+var lotteriesChosenMissedDeadline = []
     
 var practice_lotteries_chosen = []
 var practice_lotteries_chosen_missed_deadline = []
@@ -248,7 +218,6 @@ let rounds_starting_block;
 
 var attention_checks = [];
 var attention_check_info = [];
-//var attention_check_happened = 0;
 
 
 // Initialize data dictionaries 

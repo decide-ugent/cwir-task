@@ -26,8 +26,7 @@ function reproductionTaskMethod1() {
     ctx.arc(95, 50, 40, 0, 2 * Math.PI); // Center at (95, 50) with radius 40
     ctx.lineWidth = 8; // Set the width of the outline
     ctx.stroke(); // Draw only the outline (circumference)
-    //ctx.fillStyle = "red";
-    //ctx.fill(); // Fill the circle with red
+
     
     hideCursor() 
 
@@ -77,9 +76,7 @@ function practiceReproductionTaskMethod1() {
     ctx.arc(95, 50, 40, 0, 2 * Math.PI); // Center at (95, 50) with radius 40
     ctx.lineWidth = 8; // Set the width of the outline
     ctx.stroke(); // Draw only the outline (circumference)
-    //ctx.fillStyle = "black";
-    //ctx.fill(); //Fill the circle with black
-    
+
     hideCursor() 
 
     randomInterval = setTimeout(function() {
@@ -103,7 +100,6 @@ function practiceReproductionTaskMethod1() {
             .append(messageReproTask2)
 
         if (practiceRound < 4) {
-            //$('#dotContainer').empty().append($('#reproductionMessageContainer').show(),$canvas).show();
             $('#dotContainer').empty().append(messagesContainer,$canvas).show();
         } else {
             $('#dotContainer').empty().append($canvas).show();  

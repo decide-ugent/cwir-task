@@ -14,9 +14,6 @@ loadGambles()
 showConsentForm()
 
 
-//trainingCompleted()
-//finalQuestionnaire()
-//takeBreak(1)
 
 
 

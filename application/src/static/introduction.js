@@ -39,16 +39,6 @@ function showIntroduction() {
             completionTimeIntroduction = performance.now() - startTimeIntroduction
 
             showExplanations(1,1)
-
-            //This is just for testing. Delete this.
-            //getBonus()
-            //showOptions()  
-            //showPracticeOptions()  
-            //reproductionTask()
-            //finalQuestionnaire()
-            //takeBreak(33)          
-            //showPracticeOptions()
-            //bonusFeedbackMessage()
         
         })
 

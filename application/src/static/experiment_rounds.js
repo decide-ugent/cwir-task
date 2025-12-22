@@ -116,35 +116,10 @@ function showOptions() {
 
                             stopRecording()
 
-                            /*dataMouseTracking['StudyID'] = studyID;
-                            dataMouseTracking['SessionID'] = sessionID;
-                            dataMouseTracking['ParticipantID'] = participantID;
-                            dataMouseTracking['ExperimentGambleNumber'] =  gamblesPresentationOrder[roundNumber-1]+1;
-                            dataMouseTracking['ExperimentRoundNumber'] = roundNumber;
-                            dataMouseTracking['MouseXCoordinates'] = mouseTrackingXcor.join(', ');
-                            dataMouseTracking['MouseYCoordinates'] = mouseTrackingYcor.join(', ');
-                            dataMouseTracking['RectLeftOptionLeftXCoord'] = rectLeftOptionLeftXCoord;
-                            dataMouseTracking['RectLeftOptionRightXCoord'] = rectLeftOptionRightXCoord;
-                            dataMouseTracking['RectLeftOptionTopYCoord'] = rectLeftOptionTopYCoord; 
-                            dataMouseTracking['RectLeftOptionBottomYCoord'] = rectLeftOptionBottomYCoord; 
-                            dataMouseTracking['RectRightOptionLeftXCoord'] = rectRightOptionLeftXCoord; 
-                            dataMouseTracking['RectRightOptionRightXCoord'] = rectRightOptionRightXCoord; 
-                            dataMouseTracking['RectRightOptionTopYCoord'] = rectRightOptionTopYCoord; 
-                            dataMouseTracking['RectRightOptionBottomYCoord'] = rectRightOptionBottomYCoord;
-                            dataMouseTracking['RectStartButtonLeftXCoord'] = rectStartButtonLeftXCoord; 
-                            dataMouseTracking['RectStartButtonRightXCoord'] = rectStartButtonRightXCoord; 
-                            dataMouseTracking['RectStartButtonTopYCoord'] = rectStartButtonTopYCoord; 
-                            dataMouseTracking['RectStartButtonBottomYCoord'] = rectStartButtonBottomYCoord; 
-                            dataMouseTracking['BigRectTopYCoord'] = bigRectTopYCoord; 
-                            dataMouseTracking['BigRectBottomYCoord'] = bigRectBottomYCoord; 
-                            dataMouseTracking['BigRectLeftXCoord'] = bigRectLeftXCoord; 
-                            dataMouseTracking['BigRectRightXCoord'] = bigRectRightXCoord;*/ 
 
                             //Save practice mouse coordinates
                             saveMouseCoordinates()
 
-                            //Empty the mouse tracking dictionary
-                            //dataMouseTracking = {}
 
                             choiceMade = true
 
@@ -224,35 +199,10 @@ function showOptions() {
 
                             stopRecording()
 
-                            /*dataMouseTracking['StudyID'] = studyID;
-                            dataMouseTracking['SessionID'] = sessionID;
-                            dataMouseTracking['ParticipantID'] = participantID;
-                            dataMouseTracking['ExperimentGambleNumber'] =  gamblesPresentationOrder[roundNumber-1]+1;
-                            dataMouseTracking['ExperimentRoundNumber'] = roundNumber;
-                            dataMouseTracking['MouseXCoordinates'] = mouseTrackingXcor.join(', ');
-                            dataMouseTracking['MouseYCoordinates'] = mouseTrackingYcor.join(', ');
-                            dataMouseTracking['RectLeftOptionLeftXCoord'] = rectLeftOptionLeftXCoord;
-                            dataMouseTracking['RectLeftOptionRightXCoord'] = rectLeftOptionRightXCoord;
-                            dataMouseTracking['RectLeftOptionTopYCoord'] = rectLeftOptionTopYCoord; 
-                            dataMouseTracking['RectLeftOptionBottomYCoord'] = rectLeftOptionBottomYCoord; 
-                            dataMouseTracking['RectRightOptionLeftXCoord'] = rectRightOptionLeftXCoord; 
-                            dataMouseTracking['RectRightOptionRightXCoord'] = rectRightOptionRightXCoord; 
-                            dataMouseTracking['RectRightOptionTopYCoord'] = rectRightOptionTopYCoord; 
-                            dataMouseTracking['RectRightOptionBottomYCoord'] = rectRightOptionBottomYCoord;
-                            dataMouseTracking['RectStartButtonLeftXCoord'] = rectStartButtonLeftXCoord; 
-                            dataMouseTracking['RectStartButtonRightXCoord'] = rectStartButtonRightXCoord; 
-                            dataMouseTracking['RectStartButtonTopYCoord'] = rectStartButtonTopYCoord; 
-                            dataMouseTracking['RectStartButtonBottomYCoord'] = rectStartButtonBottomYCoord; 
-                            dataMouseTracking['BigRectTopYCoord'] = bigRectTopYCoord; 
-                            dataMouseTracking['BigRectBottomYCoord'] = bigRectBottomYCoord; 
-                            dataMouseTracking['BigRectLeftXCoord'] = bigRectLeftXCoord; 
-                            dataMouseTracking['BigRectRightXCoord'] = bigRectRightXCoord;*/
 
                             //Save practice mouse coordinates
                             saveMouseCoordinates()
 
-                            //After saving, empty the mouse tracking dictionary
-                            //dataMouseTracking = {}
 
                             choiceMade = true
                             
