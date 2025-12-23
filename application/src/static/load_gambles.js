@@ -9,7 +9,7 @@ function loadGambles() {
     */
 
     //Get practice gambles
-    fetch('static/gambles/practice_gambles_risky_dm_3.csv')
+    fetch('static/gambles/practice_gambles.csv')
         .then(response => response.text())
         .then(csvData => {
             Papa.parse(csvData, {
@@ -23,7 +23,7 @@ function loadGambles() {
         });
 
     //Get gambles
-    fetch('static/gambles/gambles_risky_dm_3.csv')
+    fetch('static/gambles/gambles.csv')
         .then(response => response.text())
         .then(csvData => {
             Papa.parse(csvData, {

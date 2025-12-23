@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Define your MySQL database connection URL
 
-db_url = 'your_database_url'
+db_url = 'sqlite:///local.db'
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
