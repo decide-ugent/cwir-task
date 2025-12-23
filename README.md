@@ -12,4 +12,8 @@ It also includes the dataset from the **Choose-and-Wait Interval Reproduction (C
 - `application/` — Experimental task code used to run the CWIR study.
 - `dataset/` — Data used for the analyses (see folder for file descriptions and formats).
 
+## Contact
+If you have any questions, you are welcome to reach out at:
+  `alvaro.garridoperez (at) ugent.be`
+
 
