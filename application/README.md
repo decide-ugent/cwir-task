@@ -9,7 +9,7 @@ These instructions run the app using Flask’s development server. If you plan t
    
    `pip install -r requirements_cwir_app.txt`
 
-   > **Note:** For the analyses you will need different packages. You can find the requirements in `./analyses`.
+   > **Note:** The code to reproduce the analyses uses a separate Python environment with different dependencies. You can find the analysis scripts and instructions for reproducing the results in `./analyses`.
 
 4) Activate the environment
 
