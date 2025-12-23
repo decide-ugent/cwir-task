@@ -5,11 +5,11 @@ These instructions run the app using Flask’s development server. If you plan t
 
 ### Requirements
 1) Create a virtual environment for python >=3.10 using your favourite tool.
-2) In this directory (`./application`), install packages and requirements doing:
+2) In this directory (`./application`), install packages and requirements running the following command:
    
    `pip install -r requirements_cwir_app.txt`
 
-   > **Note:** The code to reproduce the analyses uses a separate Python environment with different dependencies. You can find the analysis scripts and instructions for reproducing the results in `./analyses`.
+   > **Note:** The codes to reproduce the analyses use a separate Python environment with different dependencies. You can find the analysis scripts and instructions for reproducing the results in `./analyses`.
 
 4) Activate the environment
 
